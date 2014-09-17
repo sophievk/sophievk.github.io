@@ -285,6 +285,25 @@
 						text-align: center;
 						border: 0;
 					}
+			ul.file
+			{
+				cursor: default;
+			}	
+			
+				ul.file li
+				{
+					display: inline-block;
+				}
+				
+					ul.file a
+					{
+						display: inline-block;
+						width: 2em;
+						height: 2em;
+						line-height: 2em;
+						text-align: center;
+						border: 0;
+					}
 
 		ol
 		{
@@ -527,6 +546,29 @@
 			display: none;
 		}
 
+/*********************************************************************************/
+/* File                                                                         */
+/*********************************************************************************/
+
+	.file {
+	text-decoration: none;
+	}
+
+		.file:before {
+			display: inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+		}
+		
+		.file > .label {
+			display: none;
+		}
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
