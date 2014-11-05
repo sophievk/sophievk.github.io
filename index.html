@@ -119,7 +119,17 @@
 
 		<!-- Footer -->
 			<div id="footer">
-				
+				<!-- Last Modified -->
+					<ul class="modified">
+						<li><script language="javascript"> 
+						months = ['January', 'Febraury', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+						var theDate = new Date(document.lastModified);  
+						var year = new Date();
+						with (theDate) { 
+						document.write("Last updated:  " + months[getMonth()] + ' ' + getDate() + ', ' + year.getFullYear()); 
+						} 
+						</script></li>
+					</ul>
 				<!-- Copyright -->
 					<ul class="copyright">
 						<li>&copy; Sophie Khounlo. </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
